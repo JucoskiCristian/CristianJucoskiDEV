@@ -1,17 +1,28 @@
 <!DOCTYPE html>
-<html lang="pt-BR" class="scroll-smooth">
+<html lang="en" class="sr h-screen scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link href="/dist/output.css" rel="stylesheet"> -->
+
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Cristian Jucoski DEV</title>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        ScrollReveal({ reset: true });
+    </script>
+
+    <style>
+        html.sr .load-hidden {
+            visibility: hidden;
+        }
+    </style>
+
+    <title>Cristian Jucoski Page</title>
 </head>
 
 <body class="h-screen">
-    <div id="home" class="flex h-full bg-fixed bg-cover bg-center" style="background-image: url(/img/bg.png)">
+    <div id="home" class="flex h-full bg-fixed bg-cover bg-center" style="background-image: url(https://jucoskicristian.github.io/CristianJucoskiDEV/img/bg.png)">
         <div class="ml-10 mt-36">
             <h1 class="font-semibold text-6xl m-5 text-slate-800">
                 Cristian da Silva Jucoski
@@ -20,7 +31,8 @@
                 Programar Também é uma forma de arte!
             </p>
             <a href="#sobre">
-                <button class="h-10 w-60 m-5 border rounded-md border-slate-800 shadow-lg text-yellow-300 transition ease-in-out duration-300 hover:scale-110 hover:font-semibold">
+                <button
+                    class="h-10 w-60 m-5 border rounded-md border-slate-800 shadow-lg text-yellow-300 transition ease-in-out duration-300 hover:scale-110 hover:font-semibold">
                     Saiba Mais
                 </button>
             </a>
@@ -28,7 +40,7 @@
     </div>
     <div class="flex flex-col h-full" id="sobre">
         <div class="h-1/5">
-            <div class="text-center md:pt-10">
+            <div class="text-center md:pt-10 scale">
                 <h1 class=" text-2xl md:text-5xl font-semibold">
                     Perfil
                 </h1>
@@ -39,7 +51,7 @@
         </div>
         <div class="h-full flex md:h-4/5">
             <div class="h-full flex flex-col items-center md:flex-row">
-                <div class="w-full p-2 md:w-1/3 md:ml-4">
+                <div class="w-full p-2 md:w-1/3 md:ml-4 scale1">
                     <h1 class="text-xl font-semibold text-center md:text-5xl md:text-start">
                         Sobre Mim
                     </h1>
@@ -49,12 +61,12 @@
                         muita vontade de aprender coisas novas e sempre estou me desafiando.
                     </p>
                 </div>
-                <div class="flex w-1/3 justify-center items-center">
+                <div class="flex w-1/3 justify-center items-center scale2">
                     <div>
-                        <img src="../img/Design sem nome.png" alt="" width="300" height="300">
+                        <img src="https://jucoskicristian.github.io/CristianJucoskiDEV/img/Design sem nome.png" alt="" width="300" height="300">
                     </div>
                 </div>
-                <div class="w-full md:w-1/3 p-2 relative">
+                <div class="w-full md:w-1/3 p-2 relative scale3">
                     <h1 class="text-center font-semibold text-xl md:text-2">
                         Detalhes
                     </h1>
@@ -93,20 +105,21 @@
                             Node JS
                         </li>
                     </ul>
-                    <div class="flex flex-col absolute right-2 top-1/4 justify-center gap-10 mt-4">
+                    <div class="flex flex-col absolute right-2 top-1/4 justify-center gap-10 mt-4 ">
                         <div class="hover:animate-bounce">
                             <a href="https://www.instagram.com/cristianjucoski/">
-                                <img src="/img/instagram.png" alt="" width="32" height="32">
+                                <img src="https://jucoskicristian.github.io/CristianJucoskiDEV/img/instagram.png" alt="" width="32" height="32">
                             </a>
                         </div>
                         <div class="hover:animate-bounce">
                             <a href="https://github.com/JucoskiCristian">
-                                <img src="/img/github.png" alt="" width="32" height="32">
+                                <img src="https://jucoskicristian.github.io/CristianJucoskiDEV/img/github.png" alt="" width="32" height="32">
                             </a>
                         </div>
                         <div class="hover:animate-bounce">
-                            <a href="https://api.whatsapp.com/send?phone=5548991315064&text=Ol%C3%A1%2C%20Vim%20pelo%20seu%20Site!">
-                                <img src="/img/whatsapp.png" alt="" width="32" height="32">
+                            <a
+                                href="https://api.whatsapp.com/send?phone=5548991315064&text=Ol%C3%A1%2C%20Vim%20pelo%20seu%20Site!">
+                                <img src="https://jucoskicristian.github.io/CristianJucoskiDEV/img/whatsapp.png" alt="" width="32" height="32">
                             </a>
                         </div>
                     </div>
@@ -115,4 +128,37 @@
         </div>
     </div>
 </body>
+<script>
+    var scale = {
+    scale: 0.85,
+    delay: 250
+};
+    ScrollReveal().reveal('.scale', scale);
+</script>
+<script>
+var scale = {
+    scale: 0.85,
+    delay: 500
+};
+
+ScrollReveal().reveal('.scale1', scale);
+</script>
+<script>
+    var scale = {
+        scale: 0.85,
+        delay: 600
+    };
+    
+    ScrollReveal().reveal('.scale2', scale);
+    </script>
+    <script>
+        var scale = {
+            scale: 0.85,
+            delay: 700
+        };
+        
+        ScrollReveal().reveal('.scale3', scale);
+        </script>
+</body>
+
 </html>
