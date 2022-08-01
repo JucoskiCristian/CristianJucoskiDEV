@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<html lang="en" class="sr h-screen scroll-smooth">
+<html lang="pt-BR" class="sr h-screen scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- <link href="/dist/output.css" rel="stylesheet"> -->
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script>
@@ -21,18 +24,25 @@
     <link rel="icon" type="image/x-icon" href="https://jucoskicristian.github.io/CristianJucoskiDEV/img/favicon.ico">
 </head>
 
-<body class="h-screen">
-    <div id="home" class="flex h-full bg-fixed bg-cover bg-center" style="background-image: url(https://jucoskicristian.github.io/CristianJucoskiDEV/img/bg.png)">
+<body class="h-screen ">
+    <div id="home" class="flex h-full bg-slate-400 bg-fixed bg-cover bg-center"
+        style="background-image: url(https://jucoskicristian.github.io/CristianJucoskiDEV/img/fundo.png)">
         <div class="ml-10 mt-36">
-            <h1 class="font-semibold text-6xl m-5 text-slate-800">
-                Cristian da Silva Jucoski
+            <h1 class="scale font-semibold text-6xl m-5 text-slate-800 inline-block">
+                Olá, Sou
+                <h2 class="scale font-semibold inline-block text-6xl text-cyan-800">
+                    Cristian Jucoski
+                </h2>
             </h1>
-            <p class="font-medium m-5">
-                Programar Também é uma forma de arte!
+            <p class="scale1 font-medium m-5">
+                Sou um programador Iniciante em Busca de uma grande oporutnidade
             </p>
-            <a href="#sobre">
+            <p class="scale2 font-medium m-5">
+                "Programar tambem é uma forma te arte!"
+            </p>
+            <a href="#sobre" class="scale3">
                 <button
-                    class="h-10 w-60 m-5 border rounded-md border-slate-800 shadow-lg text-yellow-300 transition ease-in-out duration-300 hover:scale-110 hover:font-semibold">
+                    class="h-10 w-60 m-5 border rounded-md border-slate-800 shadow-lg text-yellow-300 transition ease-in-out duration-300 hover:scale-110 hover:font-semibold hover:bg-slate-500">
                     Saiba Mais
                 </button>
             </a>
@@ -63,7 +73,8 @@
                 </div>
                 <div class="flex w-1/3 justify-center items-center scale2">
                     <div>
-                        <img src="https://jucoskicristian.github.io/CristianJucoskiDEV/img/Design sem nome.png" alt="imagen do dev" width="300" height="300">
+                        <img src="https://jucoskicristian.github.io/CristianJucoskiDEV/img/Design sem nome.png"
+                            alt="imagen do dev" width="300" height="300">
                     </div>
                 </div>
                 <div class="w-full md:w-1/3 p-2 relative scale3">
@@ -111,17 +122,21 @@
                     <div class="flex flex-col absolute right-2 top-1/4 justify-center gap-10 mt-4 ">
                         <div class="hover:animate-bounce">
                             <a href="https://www.instagram.com/cristianjucoski/">
-                                <img src="https://jucoskicristian.github.io/CristianJucoskiDEV/img/instagram.png" alt="imagen instagram" width="32" height="32">
+                                <img src="https://jucoskicristian.github.io/CristianJucoskiDEV/img/instagram.png"
+                                    alt="imagen instagram" width="32" height="32">
                             </a>
                         </div>
                         <div class="hover:animate-bounce">
                             <a href="https://github.com/JucoskiCristian">
-                                <img src="https://jucoskicristian.github.io/CristianJucoskiDEV/img/github.png" alt="imagen github" width="32" height="32">
+                                <img src="https://jucoskicristian.github.io/CristianJucoskiDEV/img/github.png"
+                                    alt="imagen github" width="32" height="32">
                             </a>
                         </div>
                         <div class="hover:animate-bounce">
-                            <a href="https://api.whatsapp.com/send?phone=5548991315064&text=Ol%C3%A1%2C%20Vim%20pelo%20seu%20Site!">
-                                <img src="https://jucoskicristian.github.io/CristianJucoskiDEV/img/whatsapp.png" alt="imagen wpp" width="32" height="32">
+                            <a
+                                href="https://api.whatsapp.com/send?phone=5548991315064&text=Ol%C3%A1%2C%20Vim%20pelo%20seu%20Site!">
+                                <img src="https://jucoskicristian.github.io/CristianJucoskiDEV/img/whatsapp.png"
+                                    alt="imagen wpp" width="32" height="32">
                             </a>
                         </div>
                     </div>
@@ -132,35 +147,38 @@
 </body>
 <script>
     var scale = {
-    scale: 0.85,
-    delay: 250
-};
+        scale: 0.85,
+        delay: 250
+    };
     ScrollReveal().reveal('.scale', scale);
 </script>
-<script>
-var scale = {
-    scale: 0.85,
-    delay: 500
-};
 
-ScrollReveal().reveal('.scale1', scale);
+<script>
+    var scale = {
+        scale: 0.85,
+        delay: 500
+    };
+
+    ScrollReveal().reveal('.scale1', scale);
 </script>
+
 <script>
     var scale = {
         scale: 0.85,
         delay: 600
     };
-    
+
     ScrollReveal().reveal('.scale2', scale);
-    </script>
-    <script>
-        var scale = {
-            scale: 0.85,
-            delay: 700
-        };
-        
-        ScrollReveal().reveal('.scale3', scale);
-        </script>
+</script>
+
+<script>
+    var scale = {
+        scale: 0.85,
+        delay: 700
+    };
+
+    ScrollReveal().reveal('.scale3', scale);
+</script>
 </body>
 
 </html>
